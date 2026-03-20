@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.3">
+  <diagram name="Page-1" id="QOPtF0m22UUxg8-MjA_Z">
+    <mxGraphModel dx="2066" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FYza76iJ225NjEt3-kPi-5" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FYza76iJ225NjEt3-kPi-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-16" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FYza76iJ225NjEt3-kPi-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-19" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FYza76iJ225NjEt3-kPi-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-21" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="FYza76iJ225NjEt3-kPi-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Arduino Nano" vertex="1">
+          <mxGeometry height="60" width="120" x="385" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-4" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FYza76iJ225NjEt3-kPi-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="BLDC Controller" vertex="1">
+          <mxGeometry height="60" width="120" x="165" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="BLDC Motor" vertex="1">
+          <mxGeometry height="60" width="120" x="165" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-12" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FYza76iJ225NjEt3-kPi-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User Nav Buttons" vertex="1">
+          <mxGeometry height="60" width="120" x="385" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-10" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FYza76iJ225NjEt3-kPi-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Emergency Stop" vertex="1">
+          <mxGeometry height="60" width="120" x="165" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-9" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FYza76iJ225NjEt3-kPi-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-11" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="FYza76iJ225NjEt3-kPi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="335" y="200" />
+              <mxPoint x="335" y="500" />
+              <mxPoint x="415" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="MAIN POWER" vertex="1">
+          <mxGeometry height="60" width="120" x="165" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Rollers" vertex="1">
+          <mxGeometry height="60" width="120" x="265" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-20" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FYza76iJ225NjEt3-kPi-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Solid State Relays" vertex="1">
+          <mxGeometry height="60" width="120" x="335" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="LCD" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-22" edge="1" parent="1" source="FYza76iJ225NjEt3-kPi-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FYza76iJ225NjEt3-kPi-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Relay" vertex="1">
+          <mxGeometry height="60" width="120" x="485" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="FYza76iJ225NjEt3-kPi-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Actuator" vertex="1">
+          <mxGeometry height="60" width="120" x="485" y="910" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
