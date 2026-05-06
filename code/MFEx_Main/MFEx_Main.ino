@@ -1,7 +1,8 @@
 /**
  * MultiFiber-Extractor Main Program
  * Description: Basic demonstration for a 20x4 I2C LCD displaying "Hello World".
- * Author: KennyNeutron
+ * Author: 
+ * Date Started: Mar 5, 2026
  */
 
 #include <Wire.h>
