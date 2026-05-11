@@ -9,9 +9,27 @@
 #include <LiquidCrystal_I2C.h>
 #include "variables.h"
 
+#define RollerMotorPin 9
+#define ReedSwitch1_Pin 8
 
 // I2C address 0x27, 20 columns, 4 rows
 LiquidCrystal_I2C lcd(0x27, 20, 4);
+
+struct FiberData {
+  const char* name;
+  int speed;
+  int gap;
+};
+
+const FiberData fibers[] = {
+  { "Banana       ", 750, 4 },
+  { "Abaca        ", 715, 5 },
+  { "Pineapple    ", 150, 2 },
+  { "Snake Plant  ", 150, 3 }
+};
+
+bool testVar = false;
+bool ReedSwitch1_Status =false;
 
 void setup() {
   Serial.begin(9600);
@@ -19,12 +37,17 @@ void setup() {
 
   buttons_Setup();
 
+  pinMode(RollerMotorPin, OUTPUT);
+  digitalWrite(RollerMotorPin, LOW);
+
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
   lcd.print("SYSTEM STARTING...");
   delay(3000);
   CurrentScreen = 0x1000;
+
+  ISR_Setup();
 }
 
 void loop() {
