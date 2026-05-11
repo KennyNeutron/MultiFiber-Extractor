@@ -22,7 +22,7 @@ void setup() {
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
-  lcd.print("Hello World");
+  lcd.print("SYSTEM STARTING...");
   delay(3000);
   CurrentScreen = 0x1000;
 }
