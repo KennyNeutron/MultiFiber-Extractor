@@ -29,7 +29,7 @@ const FiberData fibers[] = {
 };
 
 bool testVar = false;
-bool ReedSwitch1_Status =false;
+volatile bool ReedSwitch1_Status = false;
 
 void setup() {
   Serial.begin(9600);
@@ -38,6 +38,7 @@ void setup() {
   buttons_Setup();
 
   pinMode(RollerMotorPin, OUTPUT);
+  pinMode(ReedSwitch1_Pin, INPUT_PULLUP);
   digitalWrite(RollerMotorPin, LOW);
 
   lcd.init();

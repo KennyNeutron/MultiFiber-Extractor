@@ -24,6 +24,7 @@ void Display_Extracting() {
 
   lcd.setCursor(7, 2);
   lcd.print(ActualSpeed1);
+  lcd.print("   ");
 
   lcd.setCursor(7, 3);
   lcd.print(ActualSpeed2);
