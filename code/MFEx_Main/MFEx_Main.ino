@@ -9,8 +9,13 @@
 #include <LiquidCrystal_I2C.h>
 #include "variables.h"
 
-#define RollerMotorPin 9
+#define RollerMotorPin 11
 #define ReedSwitch1_Pin 8
+
+#define Actuator1_InA 6
+#define Actuator1_InB 7
+#define Actuator2_InA 9
+#define Actuator2_InB 10
 
 // I2C address 0x27, 20 columns, 4 rows
 LiquidCrystal_I2C lcd(0x27, 20, 4);
