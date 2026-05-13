@@ -67,5 +67,6 @@ void Display_Main_ButtonFunctions() {
     while (Status_btn_Select())
       ;
     CurrentScreen = 0x2000;
+    Display_Main_Init = false;
   }
 }

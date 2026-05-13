@@ -13,8 +13,25 @@ void Display_Extracting_Setup() {
   lcd.setCursor(0, 2);
   lcd.print("Speed1: ");
 
-  lcd.setCursor(0, 3);
-  lcd.print("Speed2: ");
+  if ((fibers[FiberSelect].name) == "Banana       ") {
+    //4mm gap
+    Actuator_Right_Down();
+    Actuator_Left_Down();
+    delay(1200);
+    Actuator_OffAll();
+
+    analogWrite(RollerMotorPin, 240);
+  }
+
+  if ((fibers[FiberSelect].name) == "Abaca        ") {
+    //5mm gap
+    Actuator_Right_Down();
+    Actuator_Left_Down();
+    delay(1100);
+    Actuator_OffAll();
+
+    analogWrite(RollerMotorPin, 230);
+  }
 }
 
 void Display_Extracting() {
@@ -26,6 +43,21 @@ void Display_Extracting() {
   lcd.print(ActualSpeed1);
   lcd.print("   ");
 
-  lcd.setCursor(7, 3);
-  lcd.print(ActualSpeed2);
+  Display_Extracting_ButtonFunctions();
+}
+
+void Display_Extracting_ButtonFunctions() {
+
+  if (Status_btn_Select()) {
+    delay(100);
+    while (Status_btn_Select())
+      ;
+    CurrentScreen = 0x1000;
+
+    analogWrite(RollerMotorPin, 0);
+    delay(100);
+    Actuator_Reset();
+
+    Display_Extracting_Init = false;
+  }
 }

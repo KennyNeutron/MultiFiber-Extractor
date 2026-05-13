@@ -9,8 +9,9 @@
 #include <LiquidCrystal_I2C.h>
 #include "variables.h"
 
-#define RollerMotorPin 11
+#define RollerMotorPin 10
 #define ReedSwitch1_Pin 8
+#define ExtractorMotorPin 12
 
 
 // I2C address 0x27, 20 columns, 4 rows
@@ -53,18 +54,7 @@ void setup() {
 
   Actuator_Setup();
   delay(1000);
-  Actuator_Right_Up();
-  Actuator_Left_Up();
-  delay(5000);
-  Actuator_OffAll();
-  delay(1000);
-
-  //Calibrate Actuator
-  Actuator_Right_Down();
-  delay(700);
-  Actuator_OffAll();
-  delay(1000);
-  //=========== END OF CALIBRATION
+  Actuator_Reset();
 
   // //4mm gap
   // Actuator_Right_Down();
@@ -73,7 +63,14 @@ void setup() {
   // Actuator_OffAll();
 
   pinMode(RollerMotorPin, OUTPUT);
-  digitalWrite(RollerMotorPin, 1);
+  analogWrite(RollerMotorPin, 0);
+
+  pinMode(ExtractorMotorPin, OUTPUT);
+  digitalWrite(ExtractorMotorPin, 0);
+  delay(2000);
+  // digitalWrite(ExtractorMotorPin, 1);
+  // delay(2000);
+  // digitalWrite(ExtractorMotorPin, 0);
 }
 
 void loop() {

@@ -1,7 +1,7 @@
 #define Actuator1_InA 6
 #define Actuator1_InB 7
 #define Actuator2_InA 9
-#define Actuator2_InB 10
+#define Actuator2_InB 11
 
 void Actuator_Setup() {
   pinMode(Actuator1_InA, OUTPUT);
@@ -37,4 +37,19 @@ void Actuator_OffAll() {
   digitalWrite(Actuator1_InB, 0);
   digitalWrite(Actuator2_InA, 0);
   digitalWrite(Actuator2_InB, 0);
+}
+
+void Actuator_Reset() {
+  Actuator_Right_Up();
+  Actuator_Left_Up();
+  delay(5000);
+  Actuator_OffAll();
+  delay(1000);
+
+  //Calibrate Actuator
+  Actuator_Right_Down();
+  delay(700);
+  Actuator_OffAll();
+  delay(1000);
+  //=========== END OF CALIBRATION
 }
