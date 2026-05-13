@@ -24,10 +24,10 @@ struct FiberData {
 };
 
 const FiberData fibers[] = {
-  { "Banana       ", 750, 4 },
-  { "Abaca        ", 715, 5 },
-  { "Pineapple    ", 150, 2 },
-  { "Snake Plant  ", 150, 3 }
+  { "Banana       ", 750, 2 },
+  { "Abaca        ", 715, 3 },
+  { "Pineapple    ", 150, 3 },
+  { "Snake Plant  ", 150, 5 }
 };
 
 bool testVar = false;
@@ -46,11 +46,14 @@ void setup() {
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
-  lcd.print("SYSTEM STARTING...");
+  lcd.print("SYSTEM BOOTING...");
   delay(3000);
   CurrentScreen = 0x1000;
 
   ISR_Setup();
+
+  lcd.setCursor(0, 1);
+  lcd.print("CALIBRATING...");
 
   Actuator_Setup();
   delay(1000);
