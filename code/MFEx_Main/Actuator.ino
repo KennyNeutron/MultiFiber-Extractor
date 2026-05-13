@@ -11,9 +11,25 @@ void Actuator_Setup() {
   Actuator_OffAll();
 }
 
+
+//Needs Calibration
 void Actuator_Right_Down() {
+  digitalWrite(Actuator1_InA, 0);
+  digitalWrite(Actuator1_InB, 1);
+}
+void Actuator_Right_Up() {
   digitalWrite(Actuator1_InA, 1);
   digitalWrite(Actuator1_InB, 0);
+}
+
+void Actuator_Left_Down() {
+  digitalWrite(Actuator2_InA, 0);
+  digitalWrite(Actuator2_InB, 1);
+}
+
+void Actuator_Left_Up() {
+  digitalWrite(Actuator2_InA, 1);
+  digitalWrite(Actuator2_InB, 0);
 }
 
 void Actuator_OffAll() {

@@ -52,9 +52,28 @@ void setup() {
   ISR_Setup();
 
   Actuator_Setup();
-  Actuator_Right_Down();
-  delay(500);
+  delay(1000);
+  Actuator_Right_Up();
+  Actuator_Left_Up();
+  delay(5000);
   Actuator_OffAll();
+  delay(1000);
+
+  //Calibrate Actuator
+  Actuator_Right_Down();
+  delay(700);
+  Actuator_OffAll();
+  delay(1000);
+  //=========== END OF CALIBRATION
+
+  // //4mm gap
+  // Actuator_Right_Down();
+  // Actuator_Left_Down();
+  // delay(1200);
+  // Actuator_OffAll();
+
+  pinMode(RollerMotorPin, OUTPUT);
+  digitalWrite(RollerMotorPin, 1);
 }
 
 void loop() {
